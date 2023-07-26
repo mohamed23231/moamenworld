@@ -1,0 +1,45 @@
+/* Global Rules */
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+}
+/* main Colors */
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+/* Small Screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Larg Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Global Rules */

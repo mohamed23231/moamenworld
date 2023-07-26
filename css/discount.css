@@ -1,0 +1,111 @@
+body {
+  overflow-x: hidden;
+}
+.discount {
+  margin: 40px 0;
+}
+.discount .info {
+  color: white;
+  background-image: url("../images/discount-background1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  padding-top: 40px;
+}
+.discount .info .content,
+.discount .form {
+  width: 80%;
+  margin: 0 auto;
+}
+.discount .info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(23 135 224 / 97%);
+  z-index: -1;
+}
+.discount .info p {
+  line-height: 1.5;
+}
+.discount .info img {
+  width: 300px;
+  max-width: 100%;
+}
+.discount .form {
+  text-align: center;
+}
+.discount-header {
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.discount .form .form-input input,
+.discount .form .form-input textarea {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f9f9f9;
+  padding: 20px 15px;
+  border-bottom: 1px solid black;
+}
+.discount .form .form-input input:focus,
+.discount .form .form-input textarea:focus {
+  outline: none;
+}
+.discount .form .form-input button {
+  border: none;
+  background: none;
+  background-color: var(--main-color);
+  width: 80%;
+  padding: 15px;
+  border: 6px;
+  color: white;
+  font-size: 25px;
+}
+@media (max-width: 900px) {
+  .discount .info .content {
+    max-width: 500px;
+  }
+  .discount .info .content p {
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .discount .form .form-input {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media (min-width: 901px) {
+  .discount {
+    display: flex;
+    align-items: baseline;
+  }
+  .discount .info,
+  .discount .form {
+    flex: 1;
+  }
+  .discount .info {
+    align-self: stretch;
+  }
+} /* Medium Screen */
+
+/* @media (min-width: 700px) {
+  .gallery .container .box {
+    width: 50%;
+  }
+} */
+
+/* Larg Screen */
+
+/* @media (min-width: 1200px) {
+  .gallery .container .box {
+    width: 33.3333%;
+  }
+} */
